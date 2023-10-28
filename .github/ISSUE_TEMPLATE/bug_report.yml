@@ -1,0 +1,78 @@
+name: Bug report
+description: Report an issue with Mattermost.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Per Mattermost guidelines, GitHub issues are for bug reports: <https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/>.
+
+        - For troubleshooting see: https://forum.mattermost.com/.
+        - For feature proposals see: https://mattermost.com/suggestions/.
+
+        If you've found a bug (something appears unintentional), please open a new issue here. 
+        Mattermost will confirm steps to reproduce and file in Jira, or ask for more details if there is trouble reproducing it. 
+        If there's already an existing bug in Jira, it will be linked back to the GitHub issue so you can track when it gets fixed. 
+  - type: markdown
+    attributes:
+      value: |
+        ## Confirmation
+  - type: checkboxes
+    attributes:
+      label: Existing issues
+      description: Here you find the [existing issues on Jira](https://mattermost.atlassian.net/jira/software/c/projects/MM/issues/).
+      options:
+        - label: I confirm that I searched existing issues and this issue does not already exist.
+          required: true
+  - type: checkboxes
+    attributes:
+      label: Not security related
+      description: If the issue is security related, please see our [Responsible Disclosure Policy](https://mattermost.com/security-vulnerability-report/).
+      options:
+        - label: I confirm that my issue is not security related.
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Issue Details
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Summary
+      description: >
+        Bug report in one concise sentence
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: >
+        How can we reproduce the issue (what version are you using?)
+      placeholder: >
+        1. Open Mattermost
+        2. ...
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: >
+        Describe your issue in detail
+  - type: textarea
+    attributes:
+      label: Observed behavior (that appears unintentional) 
+      description: >
+        What did you see happen? Please include relevant error messages and/or screenshots.
+  - type: textarea
+    attributes:
+      label: Possible fixes
+      description: >
+        If you can, link to the line of code that might be responsible for the problem
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment
+  - type: input
+    id: version
+    attributes:
+      label: What version of Mattermost has the issue?
+      placeholder: v9.1.0
+      description: >
+        The version of the Mattermost instance, that has the issue
+

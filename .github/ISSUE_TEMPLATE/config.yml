@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Existing issues
+    url: https://mattermost.atlassian.net/jira/software/c/projects/MM/issues/
+    about: Before creating a new issue search through existing issues.
+  - name: Troubleshouting
+    url: https://forum.mattermost.com/
+    about: This is the issue tracker for our backend. Please report issues with the UI in the frontend repository.
+  - name: Feature proposals
+    url: https://mattermost.com/suggestions/
+    about: For feature requests, please use this link.
+  - name: Security Issue
+    url: https://mattermost.com/security-vulnerability-report/
+    about: If your issue involves security, please check the this link.
